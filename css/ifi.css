@@ -1,5 +1,5 @@
 body {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 #app-header{
@@ -12,6 +12,17 @@ body {
     font-size: 50px;
 }
 
+#main-menu{
+}
+
+.menu-element{
+    margin-left: -50px;
+    padding: 60px;
+    list-style-type: none;
+    border: 1px solid grey;
+    font-size: 30px;
+}
+    
 .blue {
   background: blue;
   height: 100px;
