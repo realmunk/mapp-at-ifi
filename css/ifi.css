@@ -22,6 +22,12 @@ body {
     border: 1px solid grey;
     font-size: 30px;
 }
+
+.arrows{
+    float: right;
+    padding: 10px;
+    border-radius: 100px;
+}
     
 .blue {
   background: blue;
