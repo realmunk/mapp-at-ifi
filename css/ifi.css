@@ -1,0 +1,12 @@
+body {
+  padding-top: 60px;
+}
+
+.blue {
+  background: blue;
+  height: 100px;
+}
+.red {
+  background: red;
+  height: 100px;
+}
