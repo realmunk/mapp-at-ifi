@@ -17,7 +17,10 @@ body {
 
 .menu-element{
     
-    margin-left: -50px;
+    margin-left: -60px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+    
     padding: 30px;
     list-style-type: none;
     border: 1px solid grey;
