@@ -1,5 +1,5 @@
 body {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 #app-header{
@@ -18,16 +18,21 @@ body {
 }
 
 .menu-element{
-    
+    margin-bottom: 5px;
     padding: 0px;
     list-style-type: none;
     border: 1px solid grey;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .menu-element > a{
     display: block;
     padding: 20px 10px;
+}
+
+.menu-element > a > i{
+    margin: -20px 5px;
+    padding: 10px 0;
 }
 
 .menu-element > a:hover{
