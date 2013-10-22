@@ -2,14 +2,16 @@ body {
   padding-top: 70px;
 }
 
-#app-header{
-    height: 100px;
+.breadcrumb *{
+    display: inline;
+    font-size: 20px;
 }
 
-#app-name{
-    margin: 25px;
-    color: whitesmoke;
-    font-size: 50px;
+.breadcrumb{
+    margin: 0px 10px;
+    padding: 0px;
+    padding-top: 5px;
+    background-color: transparent;
 }
 
 #main-menu{
@@ -22,7 +24,7 @@ body {
     padding: 0px;
     list-style-type: none;
     border: 1px solid grey;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .menu-element > a{
