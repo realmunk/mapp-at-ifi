@@ -13,25 +13,28 @@ body {
 }
 
 #main-menu{
+    margin: 0px;
+    padding: 0px;
 }
 
 .menu-element{
     
-    margin-left: -60px;
-    margin-right: -20px;
-    margin-bottom: 10px;
-    
-    padding: 30px;
+    padding: 0px;
     list-style-type: none;
     border: 1px solid grey;
     font-size: 30px;
 }
 
-.arrows{
-    
-    padding: 20px;
+.menu-element > a{
+    display: block;
+    padding: 20px 10px;
 }
-    
+
+.menu-element > a:hover{
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
 .blue {
   background: blue;
   height: 100px;
