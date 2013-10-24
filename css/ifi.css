@@ -22,6 +22,7 @@ body {
 #header-links a {
     color: lightgrey;
     padding-right: 10px;
+    text-decoration: none;
 }
 
 #main-menu{
