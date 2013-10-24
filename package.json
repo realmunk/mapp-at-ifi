@@ -1,0 +1,13 @@
+{
+  "name": "mapp-app",
+  "description": "mapp at ifi is a beautiful application for finding your room @ifi",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "supervisor": "*"
+  },
+  "scripts": {
+    "start": "supervisor server.js"
+  }
+}
