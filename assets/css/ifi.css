@@ -3,15 +3,15 @@ body {
 }
 
 .breadcrumb *{
-    display: inline;
-    font-size: 20px;
+  display: inline;
+  font-size: 20px;
 }
 
 .breadcrumb{
-    margin: 0px 10px;
-    padding: 0px;
-    padding-top: 5px;
-    background-color: transparent;
+  margin: 0px 10px;
+  padding: 0px;
+  padding-top: 5px;
+  background-color: transparent;
 }
 
 #header-links{
@@ -31,26 +31,26 @@ body {
 }
 
 .menu-element{
-    margin-bottom: 5px;
-    padding: 0px;
-    list-style-type: none;
-    border: 1px solid grey;
-    font-size: 25px;
+  margin-bottom: 5px;
+  padding: 0px;
+  list-style-type: none;
+  border: 1px solid grey;
+  font-size: 25px;
 }
 
 .menu-element > a{
-    display: block;
-    padding: 20px 10px;
+  display: block;
+  padding: 20px 10px;
 }
 
 .menu-element > a > i{
-    margin: -20px 5px;
-    padding: 10px 0;
+  margin: -20px 5px;
+  padding: 10px 0;
 }
 
 .menu-element > a:hover{
-    background-color: whitesmoke;
-    text-decoration: none;
+  background-color: whitesmoke;
+  text-decoration: none;
 }
 
 .blue {

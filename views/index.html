@@ -16,12 +16,12 @@
     <!-- Add custom CSS here -->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <ol id="header-links" class="breadcrumb">
             <li>
-                <a href="#/">@IFI</a>
+                <a href="#/">@IFI</a><span data-bind="text: breadcrumb"></span>
             </li>
           </ol>
         </div>
