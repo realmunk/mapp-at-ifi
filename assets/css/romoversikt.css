@@ -1,0 +1,12 @@
+.status_vacant{
+    color: green;
+}
+
+.status_occupied{
+    color: red;
+}
+
+tbody tr th{
+    font-weight: normal;
+}
+
