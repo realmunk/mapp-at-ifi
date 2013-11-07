@@ -1,122 +1,99 @@
-
 <div id="romoversikt" class="container rmpadding">
   <div class="row">
-    <div class="col-xs-12">
-     
-        
-    <div class="panel-group" id="accordion">
-  <div class="panel panel-info">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          1 etasje
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-       <table class="table">
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Nummer</th>
-                <th>Navn</th>
-              </tr>
-            </thead>
-            <tbody data-bind="foreach: rooms">
-              <tr>
-                <td>
-                  <!-- ko if: state > 80 -->
-                  <i class="fa fa-times-circle fa-2x status_occupied"></i>
-                  <!-- /ko -->
-                  <!-- ko ifnot: state > 50 -->
-                  <i class="fa fa-check-circle fa-2x status_vacant"></i>
-                  <!-- /ko -->
-                </td>
-                <td data-bind="text: id"></td>
-                <td data-bind="text: name"></td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="col-xs-12">       
+      <div class="panel-group" id="accordion">
+        <div class="panel">
+          <a data-toggle="collapse" class="panel-info accordion-toggle" data-parent="#accordion" href="#collapseOne">
+            <div class="panel-heading">
+              <h4 class="panel-title">1 etasje</h4>
+            </div>
+          </a>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Status</th>
+                      <th>Nummer</th>
+                      <th>Navn</th>
+                    </tr>
+                  </thead>
+                  <tbody data-bind="foreach: rooms">
+                    <tr>
+                      <td>
+                        <!-- ko if: state() >= 50 -->
+                        <i class="fa fa-times-circle fa-2x status_occupied"></i>
+                        <!-- /ko -->
+                        <!-- ko ifnot: state() >= 50 -->
+                        <i class="fa fa-check-circle fa-2x status_vacant"></i>
+                        <!-- /ko -->
+                      </td>
+                      <td data-bind="text: id"></td>
+                      <td data-bind="text: name"></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                2 etasje
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+             <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Status</th>
+                      <th>Nummer</th>
+                      <th>Navn</th>
+                    </tr>
+                  </thead>
+                  <tbody data-bind="foreach: rooms">
+                    <tr>
+                      <td>
+                        <!-- ko if: state() >= 50 -->
+                        <i class="fa fa-times-circle fa-2x status_occupied"></i>
+                        <!-- /ko -->
+                        <!-- ko ifnot: state() >= 50 -->
+                        <i class="fa fa-check-circle fa-2x status_vacant"></i>
+                        <!-- /ko -->
+                      </td>
+                      <td data-bind="text: id"></td>
+                      <td data-bind="text: name"></td>
+                    </tr>
+                  </tbody>
+                </table>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
     </div>
   </div>
-        
-       <div class="panel-group" id="accordion">
   <div class="panel panel-info">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          2 etasje
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-       <table class="table">
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Nummer</th>
-                <th>Navn</th>
-              </tr>
-            </thead>
-            <tbody data-bind="foreach: rooms">
-              <tr>
-                <td>
-                  <!-- ko if: state() >= 50 -->
-                  <i class="fa fa-times-circle fa-2x status_occupied"></i>
-                  <!-- /ko -->
-                  <!-- ko ifnot: state() >= 50 -->
-                  <i class="fa fa-check-circle fa-2x status_vacant"></i>
-                  <!-- /ko -->
-                </td>
-                <td data-bind="text: id"></td>
-                <td data-bind="text: name"></td>
-              </tr>
-            </tbody>
-          </table>
-      </div>
-    </div>
-  </div>
-           
-   <div class="panel-group" id="accordion">
-  <div class="panel panel-info">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
           3 etasje
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
+    <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
-       <table class="table">
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Nummer</th>
-                <th>Navn</th>
-              </tr>
-            </thead>
-            <tbody data-bind="foreach: rooms">
-              <tr>
-                <td>
-                  <!-- ko if: state > 80 -->
-                  <i class="fa fa-times-circle fa-2x status_occupied"></i>
-                  <!-- /ko -->
-                  <!-- ko ifnot: state > 50 -->
-                  <i class="fa fa-check-circle fa-2x status_vacant"></i>
-                  <!-- /ko -->
-                </td>
-                <td data-bind="text: id"></td>
-                <td data-bind="text: name"></td>
-              </tr>
-            </tbody>
-          </table>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
     </div>
   </div>
+</div>
+        
+        
+        
+        
+        
+
     <!--Different option for presenting -->
       <div class="panel panel-primary">
         <div class="panel-heading">

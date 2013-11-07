@@ -34,8 +34,6 @@ body {
   margin-bottom: 5px;
   padding: 0px;
   list-style-type: none;
-  border: 1px solid grey;
-  font-size: 25px;
 }
 
 .menu-element > a {
@@ -53,7 +51,18 @@ body {
   text-decoration: none;
 }
 
-.panel a{
+.panel-group .panel {
+  border-radius: 0;
+  border: 0;
+}
+
+.panel-group .panel .panel-heading {
+  border-radius: 0;
+  border: 0;
+}
+
+
+.panel a {
   text-decoration: none;
 }
 
