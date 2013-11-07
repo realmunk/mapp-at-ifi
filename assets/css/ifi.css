@@ -46,5 +46,22 @@ body {
 
 
 .menu-element .panel-title{
-    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.menu-element {
+    line-height: 5;
+    padding-left: 15px;
+}
+
+.rmpadding {
+    padding-left: 0;
+    padding-right: 0;
 }
