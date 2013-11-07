@@ -143,6 +143,96 @@
       "id": "3118",
       "type": "Colloquium",
       "state": "0"
+    },
+    {      
+      "name": "Python",
+      "id": "2269",
+      "type": "Seminar room",
+      "state": "0"
+    },
+    {      
+      "name": "Prolog",
+      "id": "2465",
+      "type": "Seminar room",
+      "state": "0"
+    },
+    {      
+      "name": "Kollokvie 1",
+      "id": "2167",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Kollokvie 2",
+      "id": "2166",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Kollokvie 3",
+      "id": "2164",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Kollokvie 4",
+      "id": "2256",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Kollokvie 5",
+      "id": "2255",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Postscript",
+      "id": "2458",
+      "type": "Seminar room",
+      "state": "0"
+    },
+    {      
+      "name": "Pearl",
+      "id": "2453",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "Pascal",
+      "id": "2452",
+      "type": "Seminar room",
+      "state": "0"
+    },
+    {      
+      "name": "Modula",
+      "id": "2443",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "Logo",
+      "id": "2438",
+      "type": "Seminar room",
+      "state": "0"
+    },
+    {      
+      "name": "Kollokvie 6",
+      "id": "2240",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Lisp",
+      "id": "2428",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "Java",
+      "id": "2423",
+      "type": "Seminar room",
+      "state": "0"
     }
   ]
 }
