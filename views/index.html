@@ -19,12 +19,12 @@
       
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <ol id="header-links" class="breadcrumb">
             <li>
-                <a href="#/">@IFI</a>
+                <a href="#/">@IFI</a><span data-bind="text: breadcrumb"></span>
             </li>
           </ol>
         </div>
@@ -39,6 +39,8 @@
     <script src="assets/lib/bootstrap.js"></script>
     <script src="assets/lib/knockout.js"></script>
     <script src="assets/lib/sammy.js"></script>
+    <script src="assets/js/Room.js"></script>
+    <script src="assets/js/RoomsViewModel.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/init.js"></script>
   </body>
