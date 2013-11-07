@@ -1,12 +1,59 @@
-<div id="romoversikt" class="container">
+
+<div id="romoversikt" class="container rmpadding">
   <div class="row">
     <div class="col-xs-12">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="fa fa-list"></i> Romoversikt</h3>
-        </div>
-        <div class="panel-body">
-          <table class="table">
+     
+        
+    <div class="panel-group" id="accordion">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          1 etasje
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+       <table class="table">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Nummer</th>
+                <th>Navn</th>
+              </tr>
+            </thead>
+            <tbody data-bind="foreach: rooms">
+              <tr>
+                <td>
+                  <!-- ko if: state > 80 -->
+                  <i class="fa fa-times-circle fa-2x status_occupied"></i>
+                  <!-- /ko -->
+                  <!-- ko ifnot: state > 50 -->
+                  <i class="fa fa-check-circle fa-2x status_vacant"></i>
+                  <!-- /ko -->
+                </td>
+                <td data-bind="text: id"></td>
+                <td data-bind="text: name"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+        
+       <div class="panel-group" id="accordion">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          2 etasje
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+       <table class="table">
             <thead>
               <tr>
                 <th>Status</th>
@@ -29,9 +76,48 @@
               </tr>
             </tbody>
           </table>
-        </div>
       </div>
-      <!--Different option for presenting -->
+    </div>
+  </div>
+           
+   <div class="panel-group" id="accordion">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          3 etasje
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+       <table class="table">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Nummer</th>
+                <th>Navn</th>
+              </tr>
+            </thead>
+            <tbody data-bind="foreach: rooms">
+              <tr>
+                <td>
+                  <!-- ko if: state > 80 -->
+                  <i class="fa fa-times-circle fa-2x status_occupied"></i>
+                  <!-- /ko -->
+                  <!-- ko ifnot: state > 50 -->
+                  <i class="fa fa-check-circle fa-2x status_vacant"></i>
+                  <!-- /ko -->
+                </td>
+                <td data-bind="text: id"></td>
+                <td data-bind="text: name"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+    <!--Different option for presenting -->
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title"><i class="fa fa-list"></i> Romoversikt</h3>
@@ -65,6 +151,8 @@
           </table>
         </div>
       </div>
+
+    
     </div>
   </div>
 </div>
