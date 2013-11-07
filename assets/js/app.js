@@ -1,25 +1,28 @@
 (function (window, $) {
+  "use strict";
 
-  window.mapp = window.mapp || {};
-  var ns = window.mapp;
+  window.MAPP = window.MAPP || {};
+  var ns = window.MAPP;
 
-  ns.Application = function () {
+  ns.Application = function (viewmodels) {
     var self = this,
-    app = $.sammy('#application'); // sammy is a routing tool
-    
+      app = $.sammy('#application'),
+      viewmodel = viewmodels; // sammy is a routing tool
+
     self.breadcrumb = ko.observable("");
 
     app.get('#/', function () {
       self.breadcrumb("");
       this.load("views/menu.html", function (resp) {
         $("#application").html(resp);
-      })
+      });
     });
 
     app.get('#/romoversikt', function () {
       self.breadcrumb("/ Romoversikt");
       this.load("views/romoversikt.html", function (resp) {
         $("#application").html(resp);
+        ko.applyBindings(viewmodel.rooms, $("#romoversikt").get(0));
       });
     });
 
@@ -43,11 +46,9 @@
         $("#application").html(resp);
       });
     });
-    
-    //constructor
+
     (function () {
       app.run("#/");
-    }())
-  }
-
+    }());
+  };
 }(window, jQuery));

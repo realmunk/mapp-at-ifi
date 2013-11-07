@@ -1,0 +1,46 @@
+{
+  "rooms": [
+    {
+      "name": "W",
+      "id": "3369",
+      "type": "Colloquie",
+      "state": "100"
+    },
+    {
+      "name": "Fortress",
+      "id": "3468",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {
+      "name": "Fortran",
+      "id": "3468",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "W",
+      "id": "3369",
+      "type": "Colloquie",
+      "state": "0"
+    },
+    {      
+      "name": "W",
+      "id": "3369",
+      "type": "Colloquie",
+      "state": "0"
+    },
+    {      
+      "name": "W",
+      "id": "3369",
+      "type": "Colloquie",
+      "state": "0"
+    },
+    {      
+      "name": "W",
+      "id": "3369",
+      "type": "Colloquie",
+      "state": "0"
+    }
+  ]
+}
