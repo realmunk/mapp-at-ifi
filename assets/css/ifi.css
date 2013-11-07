@@ -2,35 +2,35 @@ body {
   padding-top: 70px;
 }
 
-.breadcrumb *{
+.breadcrumb * {
   display: inline;
   font-size: 20px;
 }
 
-.breadcrumb{
+.breadcrumb {
   margin: 0px 10px;
   padding: 0px;
   padding-top: 5px;
   background-color: transparent;
 }
 
-#header-links{
-    margin: 10px;
-    padding: 0;
+#header-links {
+  margin: 10px;
+  padding: 0;
 }
 
 #header-links a {
-    color: lightgrey;
-    padding-right: 10px;
-    text-decoration: none;
+  color: lightgrey;
+  padding-right: 10px;
+  text-decoration: none;
 }
 
-#main-menu{
-    margin: 0px;
-    padding: 0px;
+#main-menu {
+  margin: 0px;
+  padding: 0px;
 }
 
-.menu-element{
+.menu-element {
   margin-bottom: 5px;
   padding: 0px;
   list-style-type: none;
@@ -38,18 +38,22 @@ body {
   font-size: 25px;
 }
 
-.menu-element > a{
+.menu-element > a {
   display: block;
   padding: 20px 10px;
 }
 
-.menu-element > a > i{
+.menu-element > a > i {
   margin: -20px 5px;
   padding: 10px 0;
 }
 
-.menu-element > a:hover{
+.menu-element > a:hover {
   background-color: whitesmoke;
+  text-decoration: none;
+}
+
+.panel a{
   text-decoration: none;
 }
 
@@ -60,4 +64,9 @@ body {
 .red {
   background: red;
   height: 100px;
+}
+
+
+.menu-element .panel-title{
+  padding-left: 20px;
 }
