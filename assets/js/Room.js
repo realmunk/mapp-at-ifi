@@ -8,16 +8,16 @@
     this.id = id;
     this.name = name;
     this.type = type;
-    this.state = state;
+    this.state = ko.observable(state);
   };
 
   // put shit here
   ns.Room.prototype.getState = function () {
-    return this.state;
+    return this.state();
   };
 
-  ns.Room.prototype.getState = function (state) {
-    this.state = state;
+  ns.Room.prototype.setState = function (state) {
+    this.state(state);
   };
 
 }(window));

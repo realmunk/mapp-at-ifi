@@ -15,6 +15,13 @@
       $.each(resp.rooms, function (index, room) {
         self.rooms.push(new model.Room(room.id, room.name, room.type, room.state));
       });
+
+      setInterval(function () {
+        $.each(self.rooms(), function (index, room) {
+          room.setState(Math.round(Math.random() * 100, 2));
+          console.log(room.getState());
+        });
+      }, 10000);
     }
 
     function error(resp) {

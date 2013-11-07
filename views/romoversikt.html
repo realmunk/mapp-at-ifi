@@ -17,10 +17,10 @@
             <tbody data-bind="foreach: rooms">
               <tr>
                 <td>
-                  <!-- ko if: state > 80 -->
+                  <!-- ko if: state() >= 50 -->
                   <i class="fa fa-times-circle fa-2x status_occupied"></i>
                   <!-- /ko -->
-                  <!-- ko ifnot: state > 50 -->
+                  <!-- ko ifnot: state() >= 50 -->
                   <i class="fa fa-check-circle fa-2x status_vacant"></i>
                   <!-- /ko -->
                 </td>

@@ -3,7 +3,7 @@
     {
       "name": "W",
       "id": "3369",
-      "type": "Colloquie",
+      "type": "Colloquium",
       "state": "100"
     },
     {
@@ -14,32 +14,134 @@
     },
     {
       "name": "Fortran",
-      "id": "3468",
+      "id": "3467",
       "type": "Computer lab",
       "state": "0"
     },
     {      
-      "name": "W",
-      "id": "3369",
-      "type": "Colloquie",
+      "name": "Y",
+      "id": "3367",
+      "type": "Colloquium",
       "state": "0"
     },
     {      
-      "name": "W",
-      "id": "3369",
-      "type": "Colloquie",
+      "name": "Euler",
+      "id": "3459",
+      "type": "Computer lab",
       "state": "0"
     },
     {      
-      "name": "W",
-      "id": "3369",
-      "type": "Colloquie",
+      "name": "Euclid",
+      "id": "3458",
+      "type": "Program room",
       "state": "0"
     },
     {      
-      "name": "W",
-      "id": "3369",
-      "type": "Colloquie",
+      "name": "Pi",
+      "id": "3257",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "U",
+      "id": "3255",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Eiffel",
+      "id": "3453",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "Cobol",
+      "id": "3452",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "Chill",
+      "id": "3443",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Caml",
+      "id": "3438",
+      "type": "Seminar room",
+      "state": "0"
+    },
+    {      
+      "name": "C",
+      "id": "3255",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {      
+      "name": "Bliss",
+      "id": "3427",
+      "type": "Program room",
+      "state": "0"
+    },
+    {      
+      "name": "XML",
+      "id": "3427",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {      
+      "name": "A",
+      "id": "3225",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {
+      "name": "K",
+      "id": "3224",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {
+      "name": "Limbo",
+      "id": "3418",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {
+      "name": "Assembler",
+      "id": "3417",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {
+      "name": "PO",
+      "id": "3210",
+      "type": "Colloquium",
+      "state": "0"
+    },
+    {
+      "name": "Algol",
+      "id": "3408",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {
+      "name": "Ada (Åpen Sone)",
+      "id": "3407",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {
+      "name": "Studorg",
+      "id": "3403",
+      "type": "Computer lab",
+      "state": "0"
+    },
+    {
+      "name": "Awk",
+      "id": "3118",
+      "type": "Colloquium",
       "state": "0"
     }
   ]
