@@ -18,7 +18,7 @@
       });
     });
 
-    app.get('#/romoversikt', function () {
+    app.get('#/rom-oversikt', function () {
       self.breadcrumb("/ Romoversikt");
       this.load("views/romoversikt.html", function (resp) {
         $("#application").html(resp);
@@ -33,14 +33,14 @@
       });
     });
 
-    app.get('#/hvaSkjer', function () {
+    app.get('#/hva-skjer', function () {
       self.breadcrumb("/ Hva skjer?");
       this.load("views/hvaSkjer.html", function (resp) {
         $("#application").html(resp);
       });
     });
 
-    app.get('#/praktiskInfo', function () {
+    app.get('#/praktisk-info', function () {
       self.breadcrumb("/ Praktisk informasjon");
       this.load("views/praktiskInfo.html", function (resp) {
         $("#application").html(resp);
