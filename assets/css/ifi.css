@@ -17,10 +17,10 @@ body {
 #header-links {
   margin: 10px;
   padding: 0;
+  color: white;
 }
 
 #header-links a {
-  color: lightgrey;
   padding-right: 10px;
   text-decoration: none;
 }
