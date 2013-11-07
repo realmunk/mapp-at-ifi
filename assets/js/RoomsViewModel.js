@@ -19,7 +19,6 @@
       setInterval(function () {
         $.each(self.rooms(), function (index, room) {
           room.setState(Math.round(Math.random() * 100, 2));
-          console.log(room.getState());
         });
       }, 10000);
     }
