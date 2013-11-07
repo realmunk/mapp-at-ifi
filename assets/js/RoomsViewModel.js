@@ -10,6 +10,9 @@
 
     self.rooms = ko.observableArray();
 
+    self.filteredRooms = ko.computed(function () {
+      return self.rooms();
+    });
 
     function success(resp) {
       $.each(resp.rooms, function (index, room) {
