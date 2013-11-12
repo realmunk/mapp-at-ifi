@@ -4,14 +4,14 @@
  	var ns = window.MAPP,
  		model = window.MAPP.Model;
 
- 	ns.EventsViewModel = function() {
+ 	ns.EventsViewModel = function () {
  		var self = this;
 
  		self.events = ko.observableArray();
 
     function success(resp) {
       $.each(resp.events, function (index, event) {
-        self.events.push(new model.Event(event.date, event.desc, event.location));
+        self.events.push(new model.Event(event.date, event.desc, event.where));
       });
     }
 
