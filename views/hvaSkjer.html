@@ -18,21 +18,11 @@
                   <th>Hvor</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody data-bind="foreach: eventToday">
                 <tr>
-                    <td>16:15</td>
-                    <td><a href="#">Illustrator 101</a></td>
-                    <td>ADA</td>
-                </tr>
-                <tr>
-                    <td>17:15</td>
-                    <td><a href="#">CV-vask</a></td>
-                    <td>Smalltalk</td>
-                </tr>
-                <tr>
-                    <td>18:00</td>
-                    <td><a href="#">Whiskey seminar</a></td>
-                    <td>Escape</td>
+                    <td data-bind="text: date"></td>
+                    <td data-bind="text: event"></td>
+                    <td data-bind="text: location"></td>
                 </tr>
             </tbody>
               
