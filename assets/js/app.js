@@ -37,6 +37,7 @@
       self.breadcrumb("/ Hva skjer?");
       this.load("views/hvaSkjer.html", function (resp) {
         $("#application").html(resp);
+        ko.applyBindings(viewmodel.events, $("#hvaskjer").get(0));
       });
     });
 

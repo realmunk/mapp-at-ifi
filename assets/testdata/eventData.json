@@ -4,7 +4,26 @@
 			"date": "14.03.13",
 			"desc": "Whiskey Seminar",
 			"location": "3223 ADA",
-
+		},
+		{
+			"date": "16.03.13",
+			"desc": "Illustrator 101",
+			"location": "2426 Java",
+		},
+		{
+			"date": "01.04.13",
+			"desc": "CV-vask",
+			"location": "1231 Smalltalk",
+		},
+		{
+			"date": "07.04.13",
+			"desc": "Intro til Scala med Sonen",
+			"location": "3219 ADA",
+		},
+		{
+			"date": "10.04.13",
+			"desc": "Emacskurs",
+			"location": "3342 C",
 		},
 	]
 }

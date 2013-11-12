@@ -1,5 +1,4 @@
 (function (window, $) {
-
   window.MAPP = window.MAPP || {};
   window.MAPP.Model = window.MAPP.Model || {};
   var ns = window.MAPP,
