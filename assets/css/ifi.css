@@ -34,7 +34,7 @@ body {
   margin-bottom: 5px;
   padding: 0px;
   list-style-type: none;
-}
+  }
 
 .menu-element > a {
   display: block;
@@ -83,4 +83,19 @@ body {
 .rmpadding {
     padding-left: 0;
     padding-right: 0;
+}
+
+#roomFilter .btn-group {
+  margin-bottom: 10px;
+}
+
+#roomFilter {
+  background: #f1f1f1;  
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  /*border-top: 1px solid grey;*/
 }
