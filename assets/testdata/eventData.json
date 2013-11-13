@@ -1,27 +1,32 @@
 {
 	"events": [
 		{
-			"date": "13.11.13",
+			"date": "13.11.2013",
+			"time": "16:15",
 			"desc": "Whiskey Seminar",
 			"where": "3223 ADA"
 		},
 		{
-			"date": "14.11.13",
+			"date": "14.11.2013",
+			"time": "16:15",
 			"desc": "Illustrator 101",
 			"where": "2426 Java"
 		},
 		{
-			"date": "15.11.13",
+			"date": "15.11.2013",
+			"time": "16:15",
 			"desc": "CV-vask",
 			"where": "1231 Smalltalk"
 		},
 		{
-			"date": "18.11.13",
+			"date": "18.11.2013",
+			"time": "16:15",
 			"desc": "Intro til Scala med Sonen",
 			"where": "3219 ADA"
 		},
 		{
-			"date": "22.11.13",
+			"date": "22.11.2013",
+			"time": "16:15",
 			"desc": "Emacskurs",
 			"where": "3342 C"
 		}

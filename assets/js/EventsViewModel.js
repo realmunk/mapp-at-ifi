@@ -8,24 +8,54 @@
  		var self = this;
 
  		self.events = ko.observableArray();
+    self.filter = ko.observable('Today');
 
 
-    self.restOfWeek = ko.computed(function(){
-      events = self.events();
+    self.filterEvents = ko.computed(function(){
+      var events = self.events();
+      filter = self.filter();
 
-      for(var i = 0; i < events.length; i++){
-      var date = events[i].date;
-      console.log(date);
-        
+      // Current date
+          var today = new Date();
+          var dayOfWeek = today.getDay();
+          var dateOfMonth = today.getDate();
+          var month = today.getMonth() + 1;
+          var year = today.getFullYear();
+          var thisDayString = dateOfMonth.toString()
+          + "." + month.toString() + "." + year.toString();
 
+      if(filter === 'All events'){
+        return events;
+      }else if(filter === 'Today'){
+        return _.filter(events, function (Event) {
+          return Event.date === thisDayString;
+        });
+      }else if(filter === 'This week'){
+        return _.filter(events, function (Event) {
+
+          var eventDay = Event.date.substring(0,2);
+          
+          var correctD = Event.date === thisDayString;
+          var correctM = Event.date[3] === month.toString()[0] && Event.date[4] === month.toString()[1];
+          var endDay = dateOfMonth + (7 - dayOfWeek);
+          var correctW = (Number(eventDay) <= endDay);
+          return !correctD && correctM && correctW;
+        });
+      }else if(filter === 'This month'){
+        return _.filter(events, function (Event) {
+          var eventDay = Event.date.substring(0,2);
+          
+          var correctM = Event.date[3] === month.toString()[0] && Event.date[4] === month.toString()[1];
+          var endDay = dateOfMonth + (7 - dayOfWeek);
+          var correctW = (Number(eventDay) <= endDay);
+          return correctM && !correctW;
+        });
       }
-      return events;
-
     });
 
     function success(resp) {
       $.each(resp.events, function (index, event) {
-        self.events.push(new model.Event(event.date, event.desc, event.where));
+        self.events.push(new model.Event(event.date, event.time, event.desc, event.where));
       });
     }
 

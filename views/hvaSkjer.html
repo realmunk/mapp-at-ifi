@@ -1,117 +1,38 @@
 <div id="hvaskjer" class="container rmpadding">
   <div class="row">
     <div class="col-xs-12">
+      <div class="col-xs-12">
+        <div id="eventFilter">
+          <div class="btn-group btn-group-justified">
+            <a type="button" value="Today" data-bind="toggleTrigger: filter" class="btn btn-info btn-default">Today</a>
+            <a type="button" value="This week" data-bind="toggleTrigger: filter" class="btn btn-info btn-default">This week</a>
+            <a type="button" value="This month" data-bind="toggleTrigger: filter" class="btn btn-info btn-default">This month</a>
+          </div>
+          <a type="button" value="All events" data-bind="toggleTrigger: filter" class="btn btn-success btn-block">All events</a>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <h3 data-bind="text: filter"></h3>
+              <th>Dato</th>
+              <th>Tid</th>
+              <th>Hva</th>
+              <th>Hvor</th>
+            </tr>
+          </thead>
+          <tbody data-bind="foreach: filterEvents">
+            <tr>
+              <td data-bind="text: date"></td>
+              <td data-bind="text: time"></td>
+              <td data-bind="text: desc"></td>
+              <td data-bind="text: where"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <div class="panel-group" id="accordion">
-          <div class="panel">
-              <a class="accordion-toggle panel-info" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">          
-      <div class="panel-heading">
-                <h4 class="panel-title">Idag</h4>
-    </div>
-    </a>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-          <table class="table table-hover table-">
-            <thead>
-                <tr>
-                  <th>Tid</th>
-                  <th>Hva</th>
-                  <th>Hvor</th>
-                </tr>
-            </thead>
-            <tbody data-bind="foreach: restOfWeek">
-                <tr>
-                    <td data-bind="text: date"></td>
-                    <td data-bind="text: desc"></td>
-                    <td data-bind="text: where"></td>
-                </tr>
-            </tbody>
-              
-          </table>
-      </div>
-    </div>
-  </div>
-          <div class="panel">
-    <a class="accordion-toggle panel-info" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-          Resten av uken
-      </h4>
-    </div>
-    </a>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        <table class="table table-hover table-">
-            <thead>
-                <tr>
-                  <th>Tid</th>
-                  <th>Hva</th>
-                  <th>Hvor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>16:15</td>
-                    <td><a href="#">Illustrator 101</a></td>
-                    <td>ADA</td>
-                </tr>
-                <tr>
-                    <td>17:15</td>
-                    <td><a href="#">CV-vask</a></td>
-                    <td>Smalltalk</td>
-                </tr>
-                <tr>
-                    <td>18:00</td>
-                    <td><a href="#">Whiskey seminar</a></td>
-                    <td>Escape</td>
-                </tr>
-            </tbody>
-              
-          </table>
-      </div>
-    </div>
-  </div>
-  <div class="panel">
-    <a class="accordion-toggle panel-info" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-          Resten av måneden
-      </h4>
-    </div>
-    </a>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <table class="table table-hover table-">
-            <thead>
-                <tr>
-                  <th>Tid</th>
-                  <th>Hva</th>
-                  <th>Hvor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>16:15</td>
-                    <td><a href="#">Illustrator 101</a></td>
-                    <td>ADA</td>
-                </tr>
-                <tr>
-                    <td>17:15</td>
-                    <td><a href="#">CV-vask</a></td>
-                    <td>Smalltalk</td>
-                </tr>
-                <tr>
-                    <td>18:00</td>
-                    <td><a href="#">Whiskey seminar</a></td>
-                    <td>Escape</td>
-                </tr>
-            </tbody>
-              
-          </table>
-      </div>
-    </div>
-  </div>
-</div>
     </div>
   </div>
 </div>

@@ -89,7 +89,7 @@ body {
   margin-bottom: 10px;
 }
 
-#roomFilter {
+#roomFilter, #eventFilter {
   background: #f1f1f1;  
   left: 0;
   right: 0;
