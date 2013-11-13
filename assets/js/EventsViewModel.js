@@ -30,7 +30,7 @@
         return _.filter(events, function (Event) {
           return Event.date === thisDayString;
         });
-      }else if(filter === 'This week'){
+      }else if(filter === 'Rest of week'){
         return _.filter(events, function (Event) {
 
           var eventDay = Event.date.substring(0,2);
@@ -41,7 +41,7 @@
           var correctW = (Number(eventDay) <= endDay);
           return !correctD && correctM && correctW;
         });
-      }else if(filter === 'This month'){
+      }else if(filter === 'Rest of month'){
         return _.filter(events, function (Event) {
           var eventDay = Event.date.substring(0,2);
           
